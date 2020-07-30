@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Vai um cafezinho?</title>
+</head>
+<body>
+
+    <!-- Barra de navegacao inicio -->
+
+    <header>
+
+        <div id="logo" class="container"><img src="/imagens/—Pngtree—coffee_3626459.png" alt=""></div>
+        <nav id="nav-bar" class="container">
+            <a class="navbar" href="#">HOME</a>
+            <a class="navbar" href="#">SOBRE</a>
+            <a class="navbar" href="#">SERVICOS</a>
+            <a class="navbar" href="#">PORTFOLIO</a>
+            <a class="navbar" href="#">FILIAIS</a>
+            <a class="navbar" href="#">CONTATO</a>
+        </nav>
+
+        <button id="intro" type="button" class="collapsible">Menu</button>
+        <div id="introducao" class="content">
+            <div class="menu">
+                <a class="drop-bar" href="#">Home</a>
+                <a class="drop-bar" href="#">Sobre</a>
+                <a class="drop-bar" href="#">Servicos</a>
+                <a class="drop-bar" href="#">Portfolio</a>
+                <a class="drop-bar" href="#">Filiais</a>
+                <a class="drop-bar" href="#">Contato</a>
+            </div>
+        </div>
+            
+    </header>
+    
+    <!-- Barra de navegacao fim -->
+
+    <!-- Conteudo principal da pagina inicio -->
+    <main>
+        <!-- Imagem principal -->
+        <div id="img-header" class="container"><img id="image-header" src="/imagens/coffee.jpg" alt=""></div>
+
+        <!-- Produtos inicio-->
+
+        <div class="container">
+            <div class="produto">
+                <img src="/imagens/preto.jpeg" alt="">
+                <div class="info">
+                    <h2>Lorem, ipsum dolor. <span>R$0.00</span></h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus cumque ipsam magni, tempora architecto eveniet!</p>
+                    <a href="#">+</a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="/imagens/leite.jpg" alt="">
+                <div class="info">
+                    <h2>Lorem, ipsum dolor. <span>R$0.00</span></h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus cumque ipsam magni, tempora architecto eveniet!</p>
+                    <a href="#">+</a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="/imagens/ref.jpg" alt="">
+                <div class="info">
+                    <h2>Lorem, ipsum dolor. <span>R$0.00</span></h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus cumque ipsam magni, tempora architecto eveniet!</p>
+                    <a href="#">+</a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="/imagens/choc.jpg" alt="">
+                <div class="info">
+                    <h2>Lorem, ipsum dolor. <span>R$0.00</span></h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus cumque ipsam magni, tempora architecto eveniet!</p>
+                    <a href="#">+</a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="/imagens/iced.jpg" alt="">
+                <div class="info">
+                    <h2>Lorem, ipsum dolor. <span>R$0.00</span></h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus cumque ipsam magni, tempora architecto eveniet!</p>
+                    <a href="#">+</a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="/imagens/tea.jpg" alt="">
+                <div class="info">
+                    <h2>Lorem, ipsum dolor. <span>R$0.00</span></h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus cumque ipsam magni, tempora architecto eveniet!</p>
+                    <a href="#">+</a>
+                </div>
+            </div>
+        </div>
+            
+        <!-- Produtos fim-->
+
+    </main>
+
+    <!-- Conteudo principal da pagina fim-->
+
+    <footer>
+        <div class="texto"></div>
+            <a class="rodape" href="#"><pre>Home | </pre></a>
+            <a class="rodape" href="#"><pre>Sobre | </pre></a>
+            <a class="rodape" href="#"><pre>Servicos | </pre></a>
+            <a class="rodape" href="#"><pre>Portfolio | </pre></a>
+            <a class="rodape" href="#"><pre>Filiais | </pre></a>
+            <a class="rodape" href="#"><pre>Contato</pre></a>
+    </footer>
+    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        var colla = document.getElementsByClassName("little");
+        var i;
+    </script>
+</body>
+</html>
