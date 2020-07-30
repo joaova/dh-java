@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="container">
+      <div id="foto-perfil">
+          <img src="imagens/perfil.jpg" alt="Foto do Joao">
+      </div>
+      <nav>
+          <ul>
+              <li class="nav-li"><a href="index.html">Perfil</a></li>
+              <li class="nav-li"><a href="hobbies.html">Hobbies</a></li>
+              <li class="nav-li"><a href="form.html">Contato</a></li>
+          </ul>
+      </nav>
+
+      <div id="redes-sociais">
+
+          <ul>
+              <li class="nav-li">
+                  <a href="#"><img class="logos" src="imagens/iconfinder_social_media_logo_github_1221585.png" alt="logo github"></a>
+              </li>
+
+              <li class="nav-li">
+                  <a href="#"><img class="logos" src="imagens/iconfinder_twitter_online_social_media_734367.png" alt="logo twitter"></a>
+              </li>
+
+              <li class="nav-li">
+                  <a href=""><img class="logos" src="imagens/iconfinder_online_social_media_facebook_734386.png" alt="logo facebook"></a>
+              </li>
+
+          </ul>
+      </div>
+
+    </header>
+
+    <main id="main">
+        <header>
+          <h1 id="title">Contato</h1>
+        <form id="survey-form">
+
+          <label id="name-label" for="name"> Digite seu nome: </label> <br>
+          <input type="text" id="name" placeholder="Nome" required> <br>
+          <label id="name-label" for="name"> Digite seu sobrenome: </label> <br>
+          <input type="text" id="sobrenome" placeholder="Sobrenome" required> <br>
+          <label id="email-label" for="email"> Coloque seu endereco de e-mail: </label><br>
+          <input type="email" id="email" placeholder="E-mail" required><br>
+          <label for="birth-date"> Preencha a data de nascimento </label><br>
+          <input type="date" id="birth-date"><br>
+
+          <p>Genero:</p>
+          <input id="masculino" class="clickable" type="radio" name="genero" value="M">
+          <label for="masculino">Masculino</label><br>
+          <input id="feminino" class="clickable" type="radio" name="genero" value="F">
+          <label for="feminino">Feminino</label><br>
+          <input id="outro" class="clickable" type="radio" name="genero" value="Outro">
+          <label for="outro">Outro</label><br>
+          <input id="nulo" class="clickable" type="radio" name="genero" value="Outro">
+          <label for="nulo">Prefiro nao responder</label>
+
+          <p>Passatempos:</p>      
+          <input id="programar" class="clickable" type="checkbox">
+          <label for="programar">Programar</label><br>
+          <input id="estudar" class="clickable" type="checkbox">
+          <label for="estudar">Estudar</label><br>
+          <input id="exercicios" class="clickable" type="checkbox">
+          <label for="exercicios">Fazer atividade fisica</label><br>
+          <input id="dormir" class="clickable" type="checkbox">
+          <label for="dormir">Dormir</label><br>
+          <input id="hibernar" class="clickable" type="checkbox">
+          <label for="hibernar">Dormir mais ainda</label><br><br>
+          
+          <textarea class="digitar" id="assunto" type="text" style="height: 30px" placeholder="Assunto"></textarea>
+          <textarea class="digitar" id="letter" type="text" placeholder="mensagem" required></textarea><br>
+
+          <button class="botao" type="submit" value="submit">Enviar</button>   
+          <button class="botao" type="reset" value="reset">Apagar</button> 
+        </form> 
+      </main>
+</body>
+</html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body {
+    background-color: whitesmoke;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 960px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+nav a {
+    padding-right: 10px;
+}
+
+#logotipo {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    border-style: solid;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+#logotipo div {
+    margin: 0;
+    height: 50%;
+    padding: 0;
+    position: relative;
+    top: 35%;
+}
+
+main {
+    width: 960px;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    height: 700px;
+    flex-wrap: wrap;
+}
+
+.produto {
+    margin: 10px;
+    width: 300px;
+}
+
+.desconto {
+    background: rgb(255, 0, 0);
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+    left: 240px;
+    width: 50px;
+    height: 30px;
+
+}
+
+.triangulo {
+    position: relative;
+    top: -20px;
+    left: 240px;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 20px solid red;
+}
+
+.nome {
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: 66px;
+}
+
+.mais {
+    display: none;
+}
+
+.produto:hover img{
+    opacity: 0.5;
+}
+
+.produto:hover .mais {
+    color: black;
+    display: inline;
+    text-align: center;
+    font-size: 50px;
+    font-weight: normal;
+    position: absolute;
+    margin: -50px 130px -50px 130px;
+}
+
+img {
+    position: absolute;
+    width: 300px;
+    height: 155px;
+    margin-top: -20px;
+}
+
+footer {
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5%;
+}
+
+footer a {
+    font-weight: bold;
+}

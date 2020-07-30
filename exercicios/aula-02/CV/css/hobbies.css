@@ -1,0 +1,30 @@
+#video {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+audio {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.hobbie {
+    display: flex;
+    justify-content: space-evenly;
+}
+.hobbie ul {
+    list-style-type: none;
+}
+
+.hobbie li {
+    display: inline-block;
+}
+
+.hobbie img {
+    height: 310px;
+    width: 220px;
+}
