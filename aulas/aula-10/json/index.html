@@ -6,7 +6,7 @@
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
-        function envio(){ 
+        function envio(){  
             var id = document.getElementById('id').value; 
             var name = document.getElementById('name').value; 
             var location = document.getElementById('location').value; 
@@ -17,7 +17,7 @@
                 data: { 
                     "id": id, 
                     "name": name, 
-                    "location": location 
+                    "location": location  
                 }, 
                 success: function(){ 
                     alert("Dados inseridos com sucesso!"); 
