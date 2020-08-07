@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+		<link rel="stylesheet" href="styles-velha.css">
+		<script src="jquery-2.2.1.js"></script>
+		<script src="velha-jq.js" type="text/javascript"></script>
+	</head>
+	<body>
+
+		<div id="pagina_inicial">
+			<table>
+				<tr>
+					<td colspan="3">JOGO DA VELHA</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imagens/jogador_1.png" alt="">
+						<br>
+						<input id="entrada_apelido_jogador_1" type="text" maxlength="10" placeholder="Apelido Jogador 1">
+					</td>
+					<td>
+						<img id="btn_iniciar_jogo" src="imagens/iniciar.png" alt="">
+					</td>
+					<td>
+						<img src="imagens/jogador_2.png" alt="">
+						<br>
+						<input id="entrada_apelido_jogador_2" type="text" maxlength="10" placeholder="Apelido Jogador 2">
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="palco_jogo">
+			<div class="jogo">
+				<img src="imagens/jogador_1.png" alt="">
+				<br>
+				<span id="nome_jogador_1"></span>
+			</div>
+			<div class="jogo">
+				<table>
+					<tr class="linhas">
+						<td class="colunas col-1">
+							<div id="a-1" class="quadrado jogada"></div>
+						</td>
+						<td class="colunas col-1">
+							<div id="a-2" class="quadrado jogada"></div>
+						</td>
+						<td class="colunas col-3">
+							<div id="a-3" class="quadrado jogada"></div>
+						</td>
+					</tr>
+					<tr class="linhas">
+						<td class="colunas col-1">
+							<div id="b-1" class="quadrado jogada"></div>
+						</td>
+						<td class="colunas col-1">
+							<div id="b-2" class="quadrado jogada"></div>
+						</td>
+						<td class="colunas col-3">
+							<div id="b-3" class="quadrado jogada"></div>
+						</td>
+					</tr>
+					<tr class="linhas">
+						<td class="colunas col-11">
+							<div id="c-1" class="quadrado jogada"></div>
+						</td>
+						<td class="colunas col-11">
+							<div id="c-2" class="quadrado jogada"></div>
+						</td>
+						<td class="colunas">
+							<div id="c-3" class="quadrado jogada"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="jogo">
+				<img src="imagens/jogador_2.png" alt="">
+				<br>
+				<span id="nome_jogador_2"></span>
+			</div>	
+		</div>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+#pagina_inicial {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#pagina_inicial table {
+    width: 600px;
+}
+
+table {
+    text-align: center;
+    margin: auto;
+}
+
+td {
+    text-align: center;
+}
+
+input {
+    border-style: none;
+    text-align: center;
+}
+
+#palco_jogo {
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+
+.jogo {
+    display: inline-block;
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+}
+
+.col-1 {
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+.col-3 {
+    border-bottom: 1px solid red;
+}
+
+.col-11 {
+    border-right: 1px solid red;
+}

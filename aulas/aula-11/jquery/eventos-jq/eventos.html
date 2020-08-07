@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <script src="jquery-2.2.1.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $("#div1").dblclick(function() {
+                alert("Elemento foi clicado!");
+            });
+
+            $("#teclado").keydown(function() {
+                alert("Elemento foi clicado!");
+            });
+
+            $("#teclado").focus(function() {
+                alert("Elemento esta em foco!");
+            });
+
+            $("#formu").change(function() {
+                alert("Elemento foi trocado     !");
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+    <div id="div1"></div>
+    <input id="teclado" type="text">
+    <select name="" id="formu">
+        <option value="1">Primeira</option>
+        <option value="2">Segunda</option>
+    </select>
+</body>
+</html>
